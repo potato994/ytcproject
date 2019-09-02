@@ -23,6 +23,15 @@ ul {
   width: 980px;
   margin: 0 auto;
 }
+.display {
+  display: block !important;
+}
+.zfdisplay {
+  display: block !important;
+}
+.wy-infomation {
+  display: none;
+}
 .wy-infomation .title {
   color: #fff;
   margin: 0px 0px 11px 130px;
@@ -46,6 +55,9 @@ ul {
 }
 .wy-infomation .infomation-block .form-group .checkbox {
   margin-right: 16px;
+}
+.wy-infomation .infomation-block .form-group .checkbox input {
+  margin-right: 10px;
 }
 .wy-infomation .infomation-block .form-group .xin-label {
   color: #3d397a;
@@ -95,6 +107,7 @@ ul {
   color: #555555 !important;
 }
 .information-content {
+  display: none;
   background-color: #a9d2f2;
   padding: 20px;
 }
@@ -104,6 +117,7 @@ ul {
   float: left;
   margin-right: 26px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .information-content ul li img {
   width: 100%;
@@ -113,4 +127,35 @@ ul {
 .information-content ul li:nth-child(10),
 .information-content ul li:nth-child(15) {
   margin-right: 0px;
+}
+.pay-bottom {
+  color: #fff;
+  font-size: 16px;
+  background-color: #3f3c67;
+  height: 140px;
+  margin-top: 20px;
+}
+.pay-bottom .tishi {
+  float: left;
+  width: 60%;
+  padding: 50px 18px 20px 20px;
+  font-size: 15px;
+}
+.pay-bottom .comfirmbtn {
+  float: right;
+  width: 40%;
+  padding: 20px;
+}
+.pay-bottom .comfirmbtn button {
+  display: block;
+  width: 314px;
+  height: 46px;
+  background-color: #77beff;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
 }

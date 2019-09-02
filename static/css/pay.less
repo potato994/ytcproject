@@ -1,49 +1,58 @@
 body {
-    padding-top     : 50px;
-    background-image: url(../images/bg2.jpg) ;
-    background-repeat:repeat-
+    padding-top: 50px;
+    background-image: url(../images/bg2.jpg);
+    background-repeat: repeat-
 }
 
 * {
-    margin    : 0;
-    padding   : 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
 .clearfix :after {
-    clear     : both;
-    content   : '.';
-    display   : block;
-    width     : 0;
-    height    : 0;
+    clear: both;
+    content: '.';
+    display: block;
+    width: 0;
+    height: 0;
     visibility: hidden;
 }
 
 .w {
-    width : 980px;
+    width: 980px;
     margin: 0 auto;
 }
+.display{
+    display: block !important;
+} 
+
+.zfdisplay{
+    display: block !important;
+} 
 
 .wy-infomation {
+    display: none;
     .title {
-        color : #fff;
+        color: #fff;
         margin: 0px 0px 11px 130px;
 
     }
 
     .infomation-block {
-        padding         : 16px 0px 16px 130px;
+        padding: 16px 0px 16px 130px;
         background-color: #fff;
-        border-radius   : 5px;
+        border-radius: 5px;
 
         label {
-            display      : block;
-            max-width    : 100%;
+            display: block;
+            max-width: 100%;
             margin-bottom: 5px;
-            font-weight  : bold;
+            font-weight: bold;
         }
 
         .form-group {
@@ -55,49 +64,53 @@ ul{
 
             .checkbox {
                 margin-right: 16px;
+                input{
+                    margin-right: 10px;
+                }
             }
 
             .xin-label {
-                color        : #3d397a;
+                color: #3d397a;
                 margin-bottom: 10px
             }
 
             .form-input {
-                border       : 1px solid rgba(255, 255, 255, 0.4);
+                border: 1px solid rgba(255, 255, 255, 0.4);
                 border-radius: 5px;
-                padding      : 0 25px;
-                height       : 40px;
-                font-size    : 15px;
-                width        : 80%;
+                padding: 0 25px;
+                height: 40px;
+                font-size: 15px;
+                width: 80%;
             }
 
             .bgtouming {
                 background-color: #dfdde3 !important;
-                color           : #3d397a !important;
+                color: #3d397a !important;
             }
         }
 
         .duan {
-            width   : 335px;
-            display : inline-block;
+            width: 335px;
+            display: inline-block;
             overflow: hidden;
         }
 
     }
+   
 }
 
 
 .paypal_header {
-    background-color       : #77beff;
-    margin-top             : 15px;
-    height                 : 44px;
-    line-height            : 44px;
-    color                  : #fff;
-    font-weight            : bold;
-    font-size              : 16px;
-    border-top-left-radius : 5px;
+    background-color: #77beff;
+    margin-top: 15px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    cursor                 : pointer;
+    cursor: pointer;
 
 
     ul {
@@ -106,37 +119,80 @@ ul{
             padding: 0px 20px;
 
             &:hover {
-                background-color       : #eeeeee;
-                color                  : #2a6496;
-                border-top-left-radius : 5px;
+                background-color: #eeeeee;
+                color: #2a6496;
+                border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
-            }         
+            }
         }
-        .active{
+
+        .active {
             background-color: #fff !important;
             color: #555555 !important;
         }
     }
 }
 
-.information-content{
+.information-content {
+    display: none;
     background-color: #a9d2f2;
     padding: 20px;
-    ul{
-        li{
+
+    ul {
+        li {
             width: 166px;
             height: 50px;
             float: left;
             margin-right: 26px;
             margin-bottom: 20px;
-            img{
+            cursor: pointer;
+
+            img {
                 width: 100%;
                 height: 100%;
             }
-            &:nth-child(5),&:nth-child(10),&:nth-child(15){
+
+            &:nth-child(5),
+            &:nth-child(10),
+            &:nth-child(15) {
                 margin-right: 0px;
             }
         }
-        
+
+    }
+}
+
+.pay-bottom {
+    color: #fff;
+    font-size: 16px;
+    background-color: #3f3c67;
+    height: 140px;
+    margin-top: 20px;
+
+    .tishi {
+        float: left;
+        width: 60%;
+        padding: 50px 18px 20px 20px;
+        font-size: 15px;
+    }
+
+    .comfirmbtn {
+        float: right;
+        width: 40%;
+        padding: 20px;
+
+        button {
+            display: block;
+            width: 314px;
+            height: 46px;
+            background-color: #77beff;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 46px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+        }
     }
 }
