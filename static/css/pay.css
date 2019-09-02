@@ -1,11 +1,15 @@
 body {
   padding-top: 50px;
   background-image: url(../images/bg2.jpg);
+  background-repeat: repeat-;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+ul {
+  list-style: none;
 }
 .clearfix :after {
   clear: both;
@@ -53,7 +57,7 @@ body {
   padding: 0 25px;
   height: 40px;
   font-size: 15px;
-  width: 700px;
+  width: 80%;
 }
 .wy-infomation .infomation-block .form-group .bgtouming {
   background-color: #dfdde3 !important;
@@ -65,7 +69,7 @@ body {
   overflow: hidden;
 }
 .paypal_header {
-  background-color: #3f3b67;
+  background-color: #77beff;
   margin-top: 15px;
   height: 44px;
   line-height: 44px;
@@ -75,9 +79,6 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   cursor: pointer;
-}
-.paypal_header ul {
-  list-style: none;
 }
 .paypal_header ul li {
   display: inline-block;
@@ -92,4 +93,24 @@ body {
 .paypal_header ul .active {
   background-color: #fff !important;
   color: #555555 !important;
+}
+.information-content {
+  background-color: #a9d2f2;
+  padding: 20px;
+}
+.information-content ul li {
+  width: 166px;
+  height: 50px;
+  float: left;
+  margin-right: 26px;
+  margin-bottom: 20px;
+}
+.information-content ul li img {
+  width: 100%;
+  height: 100%;
+}
+.information-content ul li:nth-child(5),
+.information-content ul li:nth-child(10),
+.information-content ul li:nth-child(15) {
+  margin-right: 0px;
 }
