@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/pay.css">
+    <script src="../static/js/jquery.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <div class="wy-infomation w">
+            <div class="title">填写账户信息（<span style="color: red">*</span>为必填项）</div>
+            <div class="infomation-block">
+                <div class="form-group">
+                    <label class="xin-label">商品名称</label>
+                    <input type="text" class="form-input bgtouming">
+                </div>
+                <div class="form-group">
+                    <label class="xin-label">客户姓名</label>
+                    <input type="text" class="form-input bgtouming"><span style="color: red"> * </span>
+                    <p>您填写的客户姓名必须与您所提供交易的银联卡持卡人姓名相同</p>
+                </div>
+
+                <div class="form-group ">
+                    <label class="xin-label">证件类型</label>
+                    <span class="checkbox">
+                        <input type="checkbox">身份证
+                    </span>
+                    <span class="checkbox">
+                        <input type="checkbox">护照
+                    </span>
+                    <span class="checkbox">
+                        <input type="checkbox">台胞证
+                    </span>
+                    <span class="checkbox">
+                        <input type="checkbox">其他证件
+                    </span>
+
+
+                </div>
+                <div class="form-group">
+                    <label class="xin-label">证件编号</label>
+                    <input type="text" class="form-input bgtouming"><span style="color: red"> * </span>
+                    <p>只接受大陆身份证件登记的银行户口</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="xin-label">联络电话</label>
+                    <input type="text" class="form-input bgtouming"><span style="color: red"> * </span>
+                    <p>请提供银行卡号绑定的手机号，以便支付成功和我们就交易事宜与您联槃</p>
+                </div>
+
+                <div class="form-group duan" style="margin-right: 24px;">
+                    <label class="xin-label">支付卡号 <span style="color: red"> * </span></label>
+                    <input type="text" class="form-input bgtouming">
+                </div>
+                <div class="form-group duan">
+                    <label class="xin-label">金额（人命币）<span style="color: red"> * </span></label>
+                    <input type="text" class="form-input bgtouming">
+                </div>
+            </div>
+        </div>
+        <div class="paypal_header w">
+            <ul class="nav nav-tabs" >
+                <li class="presentation active">网银支付（只支持借记卡）</li>
+                <li class="presentation">快捷支付</li>
+                <li class="presentation">扫码支付</li>
+            </ul>
+        </div>
+    </form>
+
+</body>
+
+</html>
